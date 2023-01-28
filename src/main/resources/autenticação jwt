@@ -1,0 +1,40 @@
+https://hellokoding.com/registration-and-login-example-with-spring-security-spring-boot-spring-data-jpa-hsql-jsp/
+
+Dependencias{
+ <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- Geração de tokens - JSON web token -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+		
+		
+		Ordem de criação:
+		
+		
+ 1- @Entity public class Users
+ 2- @Entity public class Roles 
+ 3-  interface UsersRepository
+ 4-  interface RolesRepository
+ 
+ 5- public class UserDetailsServiceImpl implements UserDetailsService{
+ 
+ 6- interface SecurityService
+ 7- class SecurityServiceImpl
+ 
+ 8- class UserService
+ 9- class UserController
+
