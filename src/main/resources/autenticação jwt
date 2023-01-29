@@ -35,6 +35,8 @@ Dependencias{
  6- interface SecurityService
  7- class SecurityServiceImpl
  
- 8- class UserService
- 9- class UserController
+ 8- WebSecurityConfig
+ 
+  - class UserService
+  - class UserController
 
