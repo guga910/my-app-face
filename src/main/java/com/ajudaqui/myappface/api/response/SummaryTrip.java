@@ -1,4 +1,4 @@
-package com.ajudaqui.myappface.service.response;
+package com.ajudaqui.myappface.api.response;
 
 import java.math.BigDecimal;
 

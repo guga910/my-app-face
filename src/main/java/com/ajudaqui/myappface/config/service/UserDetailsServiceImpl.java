@@ -4,8 +4,6 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -37,7 +35,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		Set<GrantedAuthority> grantedAuthority = new HashSet<>();
 
 		for (Roles role : user.get().getRoles()) {
-			grantedAuthority.add(new SimpleGrantedAuthority(role.getName()));
+			grantedAuthority.add(new SimpleGrantedAuthority(role.getName().name()));
 		}
 
 		return new User(user.get().getName(), user.get().getPassword(), grantedAuthority);

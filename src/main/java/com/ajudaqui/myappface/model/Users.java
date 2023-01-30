@@ -1,5 +1,6 @@
 package com.ajudaqui.myappface.model;
 
+import java.time.LocalDate;
 import java.util.Set;
 
 import javax.persistence.Entity;
@@ -18,8 +19,20 @@ public class Users {
 	private String name;
 
 	private String password;
+	private LocalDate creatdAt;
 	    @ManyToMany
 	    private Set<Roles> roles;
+	    
+	    public Users() {
+			// TODO Auto-generated constructor stub
+		}
+	    
+		public Users(String name, String password) {
+			super();
+			this.name = name;
+			this.password = password;
+			this.creatdAt= LocalDate.now();
+		}
 		public Long getId() {
 			return id;
 		}
@@ -43,6 +56,14 @@ public class Users {
 		}
 		public void setRoles(Set<Roles> roles) {
 			this.roles = roles;
+		}
+
+		public LocalDate getCreatdAt() {
+			return creatdAt;
+		}
+
+		public void setCreatdAt(LocalDate creatdAt) {
+			this.creatdAt = creatdAt;
 		}
 	    
 	    

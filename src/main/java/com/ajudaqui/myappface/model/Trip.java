@@ -1,10 +1,12 @@
 package com.ajudaqui.myappface.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Trip {
 	
 	private Long id;
+	private LocalDate current_date;
 	private Long userNote;
 	private String district;
 	private Double toUsers;
@@ -61,6 +63,12 @@ public class Trip {
 	}
 	public void setDistrict(String district) {
 		this.district = district;
+	}
+	public LocalDate getCurrent_date() {
+		return current_date;
+	}
+	public void setCurrent_date(LocalDate current_date) {
+		this.current_date = current_date;
 	}
 	
 	

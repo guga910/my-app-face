@@ -1,17 +1,20 @@
 package com.ajudaqui.myappface.service;
 
+import com.ajudaqui.myappface.api.response.SummaryTrip;
 import com.ajudaqui.myappface.model.Trip;
-import com.ajudaqui.myappface.service.response.SummaryTrip;
 
 public class TripService {
 	
 	// real \ km, velocidade media, nota do usuario, bairro
-//	trip summary
+//	resumo da viagem
 	public SummaryTrip tripySummary(Trip trip) {
 		
 		
 		return null;
 		
 	}
+	// configuração parametros minimos para corrida
+	
+	// ficar offline e online novamente
 
 }
